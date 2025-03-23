@@ -1,0 +1,163 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins , sans-serif;
+    
+}
+body{
+    background-color: #222;
+}
+.card{
+    width:90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+
+}
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search input{
+height: 60px;
+padding: 10px 25px;
+border: 0;
+background: #ebfffc;
+color: #555;
+border-radius: 30px;
+flex: 1;
+margin-right: 16px;
+font-size: 18px; 
+outline: 0;
+}
+.search button{
+    height: 50px;
+    width: 50px;
+    border: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    outline: 0;
+
+} 
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px; 
+
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.humidity, .wind{
+    margin-top: -50px;
+    font-size: 24px;
+
+}
+humidity.p, .wind p{
+    font-size: 20px;
+    color: #ccc;
+    margin-top: -10px;
+    margin-left: -100px;
+}
+ .humidity,h4{
+    font-size: 30px;
+    color: #ccc;
+    margin-top: -10px;
+    margin-left: 175px;
+} 
+
+
+ 
+@media (max-width: 768px) {
+    .card {
+        width: 95%;
+        max-width: 400px;
+        margin: 50px auto 0;
+        padding: 30px 25px;
+    }
+    .search {
+        flex-direction: column;
+        align-items: center;
+    }
+    .search input {
+        height: 50px;
+        font-size: 16px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .search button {
+        width: 50px;
+        height: 50px;
+        font-size: 14px;
+    }
+    .temperature {
+        font-size: 50px;
+    }
+    .city {
+        font-size: 24px;
+    }
+    .details {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+     .card {
+        max-width: 90%;
+        padding: 20px;
+    } 
+    
+    .search input {
+        height: 45px;
+        font-size: 14px;
+        width: 100%;
+    }
+    .search button {
+        width: 45px;
+        height: 45px;
+        font-size: 12px;
+    }
+    .temperature {
+        font-size: 40px;
+    }
+    .city {
+        font-size: 20px;
+    }
+    .details {
+        flex-direction:column;
+        text-align: center;
+        padding: 10px;
+
+
+
+    }
+}
+
+
+
